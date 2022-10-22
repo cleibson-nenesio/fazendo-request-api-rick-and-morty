@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rick And Morty API</title>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .personagem {
+                display: inline-block;
+                margin-right: 50px;
+            }
+
+            .imagem {
+                border-radius: 8px;
+                border: 1px solid orange;
+                height: 150px;
+                width: 150px;
+            }
+
+            .imagem:hover {
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+            }
+
+            button {
+                outline: none;
+                background-color: darkgreen;
+                padding: 10px 50px;
+                font-size: 16px;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                margin-left: 150px;
+            }
+
+            button:active {
+                background-color: green;
+            }
+
+            .nome-personagem,
+            .especie-personagem,
+            .status-personagem {
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Rick And Morty API</h1>
+
+        <div class="personagem">
+            <img id="imagem-personagem" src="" alt="personagem Rick And Morty" class="imagem">
+            <p class="nome-personagem"></p>
+            <p class="especie-personagem"></p>
+            <p class="status-personagem"></p>
+        </div>
+
+        <div class="personagem">
+            <img id="imagem-personagem" src="" alt="personagem Rick And Morty" class="imagem">
+            <p class="nome-personagem"></p>
+            <p class="especie-personagem"></p>
+            <p class="status-personagem"></p>
+        </div>
+
+        <div class="personagem">
+            <img id="imagem-personagem" src="" alt="personagem Rick And Morty" class="imagem">
+            <p class="nome-personagem"></p>
+            <p class="especie-personagem"></p>
+            <p class="status-personagem"></p>
+        </div>
+
+        <br>
+
+        <button onclick="requisicaoPersonagens()">Ver mais personagens</button>
+        
+
+        <script src="index.js"></script>
+    </body>
+</html>
